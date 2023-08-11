@@ -20,8 +20,27 @@
             <li>Shafayet</li>
             <li>Bonobash</li>
         </ul>
+        <ul>
+            <li>Apple</li>
+            <li>Banna</li>
+            <li>pinapale</li>
+        </ul>
     </main>
     <!-- Script -->
     <script src="js/dom.js"></script>
+    <script>
+       const liCollection=document.getElementsByTagName('li')
+       //console.log(liCollection);
+       for (const li of liCollection){
+        console.log(li.innerText);
+       }
+
+       const allHeadings=document.getElementsByTagName('h1');
+
+        for (const h1 of allHeadings){
+            console.log(h1.innerText)
+        }
+
+    </script>
 </body>
 </html>
