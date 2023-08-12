@@ -13,7 +13,6 @@ document.getElementById('btn-post').addEventListener('click', function(){
     4 add the p tag using appendchild
     
     */
-   
     const commentContainer=document.getElementById('comment-container');
 
     const p=document.createElement('p');
