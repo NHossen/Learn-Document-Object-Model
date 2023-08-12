@@ -28,5 +28,11 @@ const makePurpleButton=document.getElementById('make-purple');
 makePurpleButton.addEventListener('click', function(){
  document.body.style.backgroundColor='purple';
 });
+
+// final
+document.getElementById('make-goldenrod').addEventListener('click',function(){
+    document.body.style.backgroundColor='goldenrod';
+ });
+
     
 
