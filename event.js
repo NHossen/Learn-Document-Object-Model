@@ -15,3 +15,18 @@ const makeGreenButton=document.getElementById('make-green');
 makeGreenButton.onclick=function makeGreen(){
     document.body.style.backgroundColor='green'
 }
+
+
+//option 4
+const pinkbutton=document.getElementById('make-pink');
+pinkbutton.addEventListener('click', makePink)
+function makePink(){
+    document.body.style.backgroundColor='pink'
+}
+//option another 4 final 
+const makePurpleButton=document.getElementById('make-purple');
+makePurpleButton.addEventListener('click', function(){
+ document.body.style.backgroundColor='purple';
+});
+    
+
