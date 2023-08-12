@@ -14,17 +14,34 @@
     </header>
     <!-- Main -->
     <main>
-        <h1>My Awesome DOM de Baba</h1>
+        <section>
+            <h1>My Awesome DOM de Baba</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur cupiditate expedita odio at cumque. Quo consectetur rerum iste quidem. Quasi?</p>
         <ul>
             <li>Jalali Set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
         </ul>
-        <ul>
-            <li>Apple</li>
-            <li>Banna</li>
-            <li>pinapale</li>
+        </section>
+        
+       
+        <section>
+            <h1 id="fruits-title">Friuts I like</h1>
+            <ul>
+            <li class="fruits-name">Apple</li>
+            <li class="fruits-name">Banna</li>
+            <li class="fruits-name">pinapale</li>
         </ul>
+        </section>
+
+        <section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li>Aatta bon</li>
+                <li>boka non</li>
+                <li>data bon</li>
+            </ul>
+        </section>
     </main>
     <!-- Script -->
     <script src="js/dom.js"></script>
@@ -32,13 +49,13 @@
        const liCollection=document.getElementsByTagName('li')
        //console.log(liCollection);
        for (const li of liCollection){
-        console.log(li.innerText);
+        //console.log(li.innerText);
        }
 
        const allHeadings=document.getElementsByTagName('h1');
 
         for (const h1 of allHeadings){
-            console.log(h1.innerText)
+            //console.log(h1.innerText)
         }
 
     </script>
