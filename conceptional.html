@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure officiis accusantium modi nulla corporis.
+        </h1>
+        <button id="text-inside">Text inside </button>
+       <!-- Adding text area value -->
+        <div id="your-dilouge">
+            
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus inventore sed!</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus inventore sed!</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus inventore sed!</p>
+        </div>
+    </div>
+
+    <textarea name="" id="my-text" cols="30" rows="10"></textarea>
+    <button id="add-btn">Add</button>
+<!-- List item -->
+     <ul id="list-item">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem, ipsum dolor.</li>
+     </ul>
+
+    <button id="add-list">Add list</button>
+    
+    
+    
+    <!-- //add name by list -->
+    <form id="formAddName">
+        <fieldset>
+          <legend>Add Name </legend>
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" />
+  
+          <button>Add</button>
+        </fieldset>
+      </form>
+  
+        <ol id="demo"></ol>
+
+<!-- Script -->
+        <script>
+
+var list = document.getElementById('demo');
+            var entry = document.getElementById('formAddName');
+            entry.onsubmit = function(evt) {
+            evt.preventDefault();
+            var firstName = document.getElementById('firstName').value;
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode(firstName));
+            list.appendChild(entry);
+
+
+
+
+            document.getElementById('add-list').addEventListener('click',function(){
+                const addNewList=document.getElementById('list-item');
+                const createNew=document.createElement('li');
+                addNewList.appendChild9(li)
+
+            })
+
+
+           
+            
+          }
+
+
+    </script>        
+
+
+
+
+    
+    <script src="coceptional.js"></script>
+</body>
+</html>
