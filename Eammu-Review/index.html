@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eammu Review</title>
+    <!-- Tailwinds -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl font-medium text-center my-14">Please Rate Us <span class="text-[#153b0e]">Our Services</span> </h1>
+     <!-- Textarea -->
+    <div class="flex justify-center">
+      <textarea class="bg-[#f9ffcf] p-4" name="" placeholder="Please Write Your Review.." id="review-container" cols="75" rows="8"></textarea>
+    </div>
+     <!-- Button -->
+    <div class="flex justify-center">
+        <button id="review-btn" class="my-6 bg-[#0c4b1a] py-2 px-4 text-white">Submit</button>
+    </div>
+
+    <!-- User Review -->
+    <div id="user-rev" class="p-10 mb-5">
+        <h1 class="text-4xl font-medium text-center" >User Review...</h1>
+    </div>
+
+    <script>
+     document.getElementById('review-btn').addEventListener('click',function(){
+        //console.log('review btn clicked')
+
+        const textareaValue=document.getElementById('review-container');
+        const getText=textareaValue.value;
+        //console.log(getText)
+        const p =document.createElement('p')
+        p.innerText=getText;
+        //console.log(p);
+
+        //now value tranfer in another element
+       const container=document.getElementById('user-rev');
+       container.appendChild(p);
+
+
+        textareaValue.value="";
+     })
+
+    </script>
+    <!-- Script -->
+    <script src="review.js"></script>
+</body>
+</html>
