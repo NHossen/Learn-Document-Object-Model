@@ -40,6 +40,35 @@
 
 
         textareaValue.value="";
+      
+     })
+
+     document.getElementById('review-container').addEventListener('keyup',function(event){
+         //console.log(event.target.value)
+         if(event.key==='Enter'){
+
+           // console.log('enter pressed')
+
+           const textareaValue=document.getElementById('review-container');
+           const getText=textareaValue.value;
+           //console.log(getText)
+           const p =document.createElement('p')
+           p.innerText=getText;
+           //console.log(p);
+   
+           //now value tranfer in another element
+          const container=document.getElementById('user-rev');
+          container.appendChild(p);
+   
+   
+           textareaValue.value="";
+
+           
+
+          
+    
+
+         }
      })
 
     </script>
