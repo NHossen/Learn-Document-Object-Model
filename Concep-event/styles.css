@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+}
+
+.count-btn{
+   
+   width: 90px;
+   margin: 0 auto;
+}
+
+.count-btn button{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+}

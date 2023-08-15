@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to my awesome count app</h1>
+        <p id="default-value">00</p>
+        <div class="count-btn">
+         <button id="plus-btn">+</button>
+         <button id="minus-btn">-</button>  
+        </div>
+        
+    </header>
+
+    <script>
+    let count=0;
+    document.getElementById('plus-btn').addEventListener('click',function(){
+       
+        const defaultValue=document.getElementById('default-value');
+        count++;
+        defaultValue.innerText=count;
+        //console.log(getValue);
+    })
+
+     //decrement value
+
+     document.getElementById('minus-btn').addEventListener('click',function(){
+        const defaultValue=document.getElementById('default-value');
+        count--;
+        defaultValue.innerText=count;
+
+     })
+
+
+    </script>
+    
+</body>
+</html>
